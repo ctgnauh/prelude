@@ -9,8 +9,8 @@
          (myFileList nil))
     (message "Opening %s..." file)
     (cond
-     ((string-equal system-type "windows-nt")
-      (mapc (lambda (fPath) (w32-shell-execute "open" (replace-regexp-in-string "/" "\\" fPath t t)) ) myFileList))
+     ((string-equal system-type "cygwin")
+      (w32-shell-execute nil (expand-file-name file default-directory)))
      ((string-equal system-type "gnu/linux")
 ;      (call-process "gvfs-open" nil 0 nil file)))
       (call-process "kde-open" nil 0 nil file))

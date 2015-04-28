@@ -9,6 +9,8 @@
 (setq jedi:setup-keys t)
 (add-hook 'python-mode-hook 'jedi:setup)
 (add-hook 'python-mode-hook 'hs-minor-mode)
+(add-hook 'python-mode-hook '(lambda ()
+                               (setq flycheck-checker 'python-flake8)))
 
 
 (provide 'personal-python)

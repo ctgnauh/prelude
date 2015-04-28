@@ -7,7 +7,7 @@
 (set-buffer-file-coding-system 'utf-8)
 (setq buffer-file-coding-system 'utf-8)
 (setq locale-coding-system 'utf-8)
-(setq current-language-environment "Chinese-GBK")
+(set-language-environment "UTF-8")
 
 (provide 'personal-locale)
 ;;; personal-locale.el ends here
