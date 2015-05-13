@@ -9,7 +9,7 @@
 
 (setq inhibit-startup-message -1)
 
-(set-face-bold 'bold nil)
+;;(set-face-bold 'bold nil)
 
 ;;(setq initial-frame-alist '( (width . 80) (height . 80)))
 

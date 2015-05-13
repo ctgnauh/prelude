@@ -4,4 +4,6 @@
 
 (setq prelude-theme 'monokai)
 
+(set-foreground-color "#FFFFF7")
+
 (provide 'personal-theme)

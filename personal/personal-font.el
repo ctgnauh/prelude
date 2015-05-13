@@ -35,10 +35,10 @@
                                    :size personal-cjk-font-size)))))
 
 
-;; (add-hook 'after-make-frame-functions
-;;            (lambda (new-frame)
-;;              (select-frame new-frame)
-;;              (personal-default-font)))
+(add-hook 'after-make-frame-functions
+           (lambda (new-frame)
+             (select-frame new-frame)
+             (personal-default-font)))
 (personal-default-font)
 
 
