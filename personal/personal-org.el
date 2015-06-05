@@ -8,6 +8,8 @@
 
 (setq org-capture-templates (quote (("d" "diary" entry (file+datetree "~/org/diary.org") "* %? %U"))))
 
+(setq org-src-fontify-natively t)
+
 (defun org-insert-src-block (src-code-type)
   "Insert a `SRC-CODE-TYPE' type source code block in org-mode."
   (interactive
@@ -16,7 +18,7 @@
             "calc" "asymptote" "dot" "gnuplot" "ledger" "lilypond" "mscgen"
             "octave" "oz" "plantuml" "R" "sass" "screen" "sql" "awk" "ditaa"
             "haskell" "latex" "lisp" "matlab" "ocaml" "org" "perl" "ruby"
-            "scheme" "sqlite")))
+            "scheme" "sqlite" "html")))
      (list (ido-completing-read "Source code type: " src-code-types))))
   (progn
     (newline-and-indent)

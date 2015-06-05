@@ -5,12 +5,13 @@
 (defun dired-open-file-in-external-app ()
   "In dired, open the file named on this line."
   (interactive)
-  (let* ((file (dired-get-filename))
-         (myFileList nil))
+  (let* ((file (dired-get-filename)))
     (message "Opening %s..." file)
     (cond
-     ((string-equal system-type "cygwin")
+     ((string-equal system-type "windows-nt")
       (w32-shell-execute nil (expand-file-name file default-directory)))
+     ((string-equal system-type "cygwin")
+      (call-process "cygstart" nil 0 nil file))
      ((string-equal system-type "gnu/linux")
 ;      (call-process "gvfs-open" nil 0 nil file)))
       (call-process "kde-open" nil 0 nil file))
