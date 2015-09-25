@@ -2,8 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(load "~/.erc-auth.gpg")
-
 (setq erc-default-nick "ctgnauh")
 (setq erc-default-full-name "Tristan Huang")
 (setq erc-default-server "irc.freenode.net")
@@ -14,6 +12,7 @@
 (defun start-freenode ()
   "Connect to Freenode"
   (interactive)
+  (load "~/.erc-auth.gpg")
   (erc
    :server "irc.freenode.net"
    :port 8000
