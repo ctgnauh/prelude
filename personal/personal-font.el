@@ -16,6 +16,8 @@
   (setq personal-cjk-font-size 16))
  ((string-equal system-type "cygwin")
   (setq personal-cjk-font "simsun"))
+ ((string-equal system-type "windows-nt")
+  (setq personal-cjk-font "simsun"))
  ((string-equal system-type "gnu/linux")
   nil))
 
