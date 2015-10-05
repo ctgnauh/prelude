@@ -17,5 +17,7 @@
 
 (auto-image-file-mode)
 
+(setq sml/theme 'dark)
+
 (provide 'personal-ui)
 ;;; personal-ui.el ends here
