@@ -19,5 +19,17 @@
   (save-some-buffers)
   (kill-emacs))
 
+(defun change-theme-to-monokai ()
+  "change theme to monokai and custom fg/bg"
+  (interactive)
+  (load-theme 'monokai)
+  (set-foreground-color "#cccccc")
+  (set-background-color "#222222"))
+
+(defun change-theme-to-solarized ()
+  "change theme to solarized dark"
+  (interactive)
+  (load-theme 'solarized-dark))
+
 (provide 'personal-misc)
 ;;; personal-misc.el ends here

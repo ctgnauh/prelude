@@ -19,5 +19,8 @@
 
 (setq sml/theme 'dark)
 
+(set-foreground-color "#cccccc")
+(set-background-color "#222222")
+
 (provide 'personal-ui)
 ;;; personal-ui.el ends here

@@ -2,7 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-(setq markdown-command "markdown_py")
+(prelude-require-packages '(markdown-mode markdown-preview-eww))
+
+(setq markdown-command "markdown_py -x gfm")
 
 (defun cleanup-org-tables ()
   (save-excursion
