@@ -12,6 +12,9 @@
 (global-set-key (kbd "C-c c")
                 (lambda () (interactive) (org-capture nil "d")))
 
+(prelude-require-package 'ace-window)
+(key-chord-define-global "jw" 'ace-window)
+
 
 (provide 'personal-global-keybindings)
 ;;; personal-global-keybindings.el ends here
