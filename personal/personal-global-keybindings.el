@@ -18,7 +18,7 @@
 
 ;; helm-ag
 (global-set-key (kbd "C-c h M-g a")
-                (lambda () (interactive) (helm-do-ag default-directory)))
+               (lambda () (interactive) (helm-do-ag default-directory)))
 (global-set-key (kbd "C-c h M-g g") 'helm-grep-do-git-grep)
 
 
